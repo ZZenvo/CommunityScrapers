@@ -8,7 +8,7 @@ sceneByURL:
 xPathScrapers:
   sceneScraper:
     scene:
-      Title: //h2[@class="font-secondary sc-1b6bgon-1 kOFSRa"]/text()
+      Title: //h2[contains(@class, "sc-1b6bgon")]/text()
       Studio:
         Name: 
           selector: //a[@class="vdkjux-5 gIliaY"]/text()
@@ -18,14 +18,15 @@ xPathScrapers:
 #                  - regex: " "
 #                    with: ""
       Date:
-        selector: //div[@class="sc-1b6bgon-0 jtRRdJ"]/text()
+        selector: //div[contains(@class, "sc-1b6bgon") and contains(text(), ",")]/text()
         postProcess:
             - parseDate: January 2, 2006
       Details: //div[@class="xz1bz0-0 fQiYnf"]/p/text()
       Tags:
         Name: //div[@class="vdkjux-1 cepogm"]/a/text()
       Performers:
-        Name: //div[@class="sc-1b6bgon-2 jywgHS"]/span/a/text()
+        # Name: //div[@class="sc-1b6bgon-2 jywgHS"]/span/a/text()
+        Name: //a[contains(@href, "pornstar") and contains(@class, "sc-1b6bgon")]/text()
       Image:
         selector: //img[@class="tg5e7m-1 lSdde"]/@src
 
