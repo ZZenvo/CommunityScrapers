@@ -3,6 +3,7 @@ sceneByURL:
   - action: scrapeXPath
     url:
     # Gone through list at: grooby.com/about/websites/
+<<<<<<< HEAD
       - asiantgirl.com #works
       # - asianamericantgirls.com
       - blacktgirlshardcore.com #works
@@ -41,10 +42,27 @@ sceneByURL:
       - transgasm.com #works
       # - ts-castingcouch.com
       # - uk-tgirls.com
+=======
+      - asiantgirl.com
+      - blacktgirlshardcore.com
+      - black-tgirls.com
+      - bobstgirls.com
+      - femoutsex.xxx #Scenes on 'femout.xxx' can some times be found on this one as well
+      - franks-tgirlworld.com
+      - grooby-archives.com
+      - groobygirls.com
+      - ladyboy-ladyboy.com
+      - ladyboy.xxx
+      - tgirlsex.xxx
+      - tgirls.xxx
+      - transexpov.com
+      - transgasm.com
+>>>>>>> upstream/master
     scraper: sceneScraper
 xPathScrapers:
   sceneScraper:
     scene:
+<<<<<<< HEAD
       Title: //p[@class="trailertitle"]/text() # done
       Date:
         selector: //div[@class="setdesc"]/text() # done
@@ -61,3 +79,22 @@ xPathScrapers:
 # IMO, newer and more 'popular' sites seem to work with this.
 # So 'older' sites need another joint scraper, or perhaps even their own seperate ones.
 # Some scenes exist on multiple sites, so you can try find it on a site that works.
+=======
+      Title: //p[@class="trailertitle"]/text()
+      Date:
+        selector: //div[@class="setdesc"]//b[contains(.,"Added")]/following-sibling::text()[1]
+        parseDate: January 2, 2006
+      Details: //div[@class="trailerpage_info"]/p[not(@class)]/text()
+      Performers:
+        Name: //div[@class="setdesc"]//a/text()
+      Studio:
+        Name: //meta[@name="author"]/@content
+      Image:
+        selector: //meta[@property="og:image"]/@content
+        postProcess:
+          - replace:
+            - regex: ^// # bobstgirls
+              with: "https://"
+        
+# Last Updated September 02, 2020.
+>>>>>>> upstream/master
