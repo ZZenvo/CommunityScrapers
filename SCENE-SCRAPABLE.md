@@ -258,6 +258,7 @@ lexingtonsteele.com|GammaEntertainment.yml|
 lezcuties.com|GammaEntertainment.yml|Lesbian
 lilhumpers.com|RealityKings.yml|
 littleasians.com|PaperStreetMedia.yml|
+littlecaprice-dreams.com|LittleCapriceDreams.yml|
 littlehellcat.com|Teencoreclub.yml|
 lookathernow.com|RealityKings.yml|
 lubed.com|AMAMultimedia.yml|
@@ -297,7 +298,7 @@ muchaslatinas.com|Hustler.yml|
 mybadmilfs.com|Mypervmom.yml|
 mydaughterswap.com|Mypervmom.yml|
 myfamilypies.com|Nubiles.yml|
-mylf.com|PaperStreetMedia.yml|
+mylf.com|Mylf.yml|
 mylfdom.com|PaperStreetMedia.yml|
 mypervmom.com|Mypervmom.yml|
 mypervyfamily.com|Mypervyfamily.yml|
