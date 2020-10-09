@@ -1,34 +1,16 @@
-<<<<<<< HEAD
-=======
 # Be sure to set a User Agent in Settings! (ex:Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0)
->>>>>>> upstream/master
 name: nympho
 sceneByURL:
   - action: scrapeXPath
     url:
       - nympho.com/view/
-<<<<<<< HEAD
-=======
       - swallowed.com/view/
       - trueanal.com/view/
       - allanal.com/view/
->>>>>>> upstream/master
     scraper: sceneScraper
 xPathScrapers:
   sceneScraper:
     scene:
-<<<<<<< HEAD
-      Title: //h2[@class="title"]/text()
-      Details: //div[@class="desc"]/p/text()
-      Performers:
-        Name: //h4[@class="models"]/a/text()
-      Studio:
-        Name: 
-            fixed: Nympho
-      Image: //video[@id="ypp-player"]/@poster
-# No Date, no Tags 
-# Last Updated July 31, 2020
-=======
       Title: //h2[@class="title"]/text()|//h1[@class="title"]/text()
       Details: //div[@class="content-page-info"]/div[@class="desc"]/p/text()
       Performers:
@@ -49,4 +31,3 @@ xPathScrapers:
       Image: //video[contains(@id,"ypp-player")]/@poster
 # No Date, no Tags
 # Last Updated September 20, 2020
->>>>>>> upstream/master

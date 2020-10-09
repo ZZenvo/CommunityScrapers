@@ -9,19 +9,11 @@ xPathScrapers:
     scene:
       Title: //meta[@name="twitter:title"]/@content
       Date: //span[@title="Release date"]/a/text()
-<<<<<<< HEAD
-      Details: //div[@class="scene-description__row"][3]/dd/text()
-      Tags:
-        Name: //div[@class="scene-description__row"][2]/dd/a/text()
-      Performers:
-        Name: //div[@class="scene-description__row"][1]/dd/a/text()
-=======
       Details: //div[@class="scene-description__row"]/dt[contains(.,"Description")]/../dd/text()
       Tags:
         Name: //div[@class="scene-description__row"]/dt[contains(.,"Genre")]/../dd/a/text()
       Performers:
         Name: //div[@class="scene-description__row"]/dt[contains(.,"Talents")]/../dd/a/text()
->>>>>>> upstream/master
       Image: 
         selector: //div[@id="player"]/@style
         postProcess:
@@ -29,8 +21,4 @@ xPathScrapers:
                 - regex: (background-image:url\()(.+)(\))
                   with: $2
 
-<<<<<<< HEAD
 # Last Updated August 01, 2020
-=======
-# Last Updated August 01, 2020
->>>>>>> upstream/master
