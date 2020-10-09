@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: trans500
+=======
+name: Trans500
+>>>>>>> upstream/master
 sceneByURL:
   - action: scrapeXPath
     url: 

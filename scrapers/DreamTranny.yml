@@ -12,14 +12,26 @@ xPathScrapers:
         selector: //div[@class="updateDescription"]/p/text()
       Date:
         selector: //span[@class="updateDate"]/text()
+<<<<<<< HEAD
         parseDate: Jan 2, 2006
+=======
+        postProcess:
+          - parseDate: Jan 2, 2006
+>>>>>>> upstream/master
       Performers:
         Name: //div[@class="updateModels"]/a/text()
       Image:
         selector: //img[contains(@src, "01.jpg")]/@src
+<<<<<<< HEAD
         replace:
           - regex: ^
             with: "https://dreamtranny.com"
+=======
+        postProcess:
+          - replace: 
+            - regex: ^
+              with: "https://dreamtranny.com"
+>>>>>>> upstream/master
       Studio: 
         Name:
           fixed: "Dream Tranny"

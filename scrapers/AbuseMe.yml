@@ -23,11 +23,22 @@ xPathScrapers:
             # Bad way to get tags
       Performers:
         Name:
+<<<<<<< HEAD
             selector: //script[contains(.,"bbGaParams.shootModels")]/text()
             postProcess:
                 - replace:
                    - regex: (.+)("\d+\s:\s)(.+)( ".+)
                      with: $3
+=======
+          selector: //script[contains(.,"bbGaParams.shootModels")]/text()
+          postProcess:
+            - replace:
+                - regex: .+\[(".+").\].+
+                  with: $1
+                - regex: ("\d+\s:\s)([^"]+)(")
+                  with: $2
+          split: ","
+>>>>>>> upstream/master
       Studio:
         Name: 
             fixed: AbuseMe
