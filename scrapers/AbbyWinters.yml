@@ -11,7 +11,8 @@ xPathScrapers:
         Name:
           fixed: AbbyWinters
       Performers:
-        Name: //td/a[contains(@href,'/nude_girl/')]/text()
+        Name:
+          selector: //td/a[contains(@href,'/nude_girl/')]/text()
       Title:
         selector: //div[starts-with(@class,'page-heading')]/div/h1/text()
       Details:
