@@ -4,3 +4,5 @@ yarn-error.log
 
 # Scraper-generated files
 /scrapers/*.ini
+scrapers/Adultime_key.txt
+scrapers/__pycache__/torrent_parser.cpython-38.pyc
