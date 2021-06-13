@@ -5,6 +5,7 @@ sceneByURL:
       - becomingfemme.com
       - pure-ts.com
       - tspov.com
+      - pure-xxx.com
     scraper: sceneScraper
 xPathScrapers:
   sceneScraper:
